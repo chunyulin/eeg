@@ -1,0 +1,46 @@
+Label mapping: {np.str_('feet'): np.int64(1), np.str_('left_hand'): np.int64(2), np.str_('right_hand'): np.int64(3), np.str_('tongue'): np.int64(4)}
+Loading ./DATA_Updated/A05T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A01T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A02T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A06T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A04T_features.xls:  (144, 151)
+Loading ./DATA_Updated/A08T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A07T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A09T_features.xls:  (288, 151)
+Loading ./DATA_Updated/A03T_features.xls:  (288, 151)
+Loaded 9 csv: X.shape = (2448, 150), y.shape = (2448,) in total.
+GA start with 10 generations and 30 pop size ...
+ Gen  0 ...   avg=0.2695 std=0.002444 min=0.2643 max=0.2716 in 29.97 secs
+ Gen  1 ...   avg=0.2708 std=0.001274 min=0.2655 max=0.2721 in 12.82 secs
+ Gen  2 ...   avg=0.2716 std=0.0003226 min=0.2704 max=0.2721 in 11.48 secs
+ Gen  3 ...   avg=0.2717 std=0.0007277 min=0.2696 max=0.2725 in 10.27 secs
+ Gen  4 ...   avg=0.2724 std=0.0007572 min=0.2696 max=0.2733 in 12.42 secs
+ Gen  5 ...   avg=0.2729 std=0.0004215 min=0.2721 max=0.2733 in 10.91 secs
+ Gen  6 ...   avg=0.2731 std=0.0003033 min=0.2725 max=0.2733 in 4.19 secs
+ Gen  7 ...   avg=0.2733 std=2.215e-06 min=0.2733 max=0.2733 in 14.75 secs
+ Gen  8 ...   avg=0.2733 std=2.191e-06 min=0.2733 max=0.2733 in 15.80 secs
+ Gen  9 ...   avg=0.2733 std=2.498e-06 min=0.2733 max=0.2733 in 9.29 secs
+GA completed. Selected 79 / 150 features: [0, 2, 3, 4, 6, 8, 9, 10, 12, 15, 18, 20, 21, 22, 23, 24, 26, 27, 29, 33, 37, 38, 40, 41, 42, 44, 45, 48, 49, 52, 53, 55, 56, 58, 60, 61, 62, 63, 68, 69, 70, 71, 74, 75, 76, 78, 83, 89, 90, 91, 94, 98, 99, 100, 101, 102, 107, 108, 109, 110, 113, 117, 119, 121, 123, 125, 126, 129, 130, 131, 132, 133, 134, 135, 140, 143, 145, 146, 149]
+
+SVC evaluating selected feature ... in 0.39 secs.
+ Classification Report:
+              precision    recall  f1-score   support
+
+        feet       1.00      0.00      0.00       188
+   left_hand       0.26      0.99      0.41       188
+  right_hand       0.31      0.02      0.04       195
+      tongue       1.00      0.00      0.00       164
+
+    accuracy                           0.26       735
+   macro avg       0.64      0.25      0.11       735
+weighted avg       0.63      0.26      0.12       735
+
+ Confusion Matrix:
+[[  0 183   5   0]
+ [  0 187   1   0]
+ [  0 191   4   0]
+ [  0 161   3   0]]
+ Accuracy:           0.2598639455782313
+ Precision (macro):  0.6416737694438526
+ Recall (macro):     0.2537984178941626
+ F1-score (macro):   0.11236263736263735
